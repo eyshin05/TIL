@@ -7,7 +7,8 @@ https://github.com/milooy/TIL
 ## 공부하는 범위
 아직 구체적으로 정하지는 않았지만 아마 다음과 같은 내용을 다루지 않을까 생각합니다.
 * 뇌인지과학 Brain & Cognitive Science
- * 사람의 학습 Learning
 * 자연언어처리 Natural Language Processing
+* 머신러닝 Machine Learning
 * 딥러닝 Deep Neural Network
- * 강화학습 Reinforcement Learning
+* 파이썬 Python
+* 디자인 패턴 Design Pattern
