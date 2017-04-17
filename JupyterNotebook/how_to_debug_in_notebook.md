@@ -8,8 +8,9 @@
 ```
 
 위와 같이 쓰면 ipdb 를 이용하는 것처럼 debugging 할 수 있다. 주요 command 는 다음과 같은 것들이 있다. 
-- n : next line (step out)
+- n : next line (step in 하지 않음)
 - s : step in
+- u : step out
 - b filename:linenum : set break point
 - c : continue (break point 를 만날때까지 실행)
 
