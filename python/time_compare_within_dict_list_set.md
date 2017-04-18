@@ -31,4 +31,4 @@ Out[16]: 8416
 
 Set 의 element search 속도가 궁금해서 해 본 실험. 속도는 dict 와 비슷하니 비슷하게 해싱하고 있다고 봐도 되는걸까?
 
-근데 size 가 dict 보다 큰 것은 의외였다... :fearful: 
+근데 size 가 dict 보다 큰 것은 의외였다... :fearful: 간단한 검색용이라면 dict 가 제일 나을듯!
