@@ -13,7 +13,7 @@
 - u : step out
 - b filename:linenum : set break point
 - c : continue (break point 를 만날때까지 실행)
-- tbreak : 한번만 걸리게 하는 temporary break point
+- tbreak filename:linenum: 한번만 걸리게 하는 temporary break point
 - disable N(break point number): break point 를 disable 함
 
 여기서 break point 를 만드는 코드는 ```b 폴더 1/폴더 2/파일.py:108``` 이런식으로 들어가면 된다. 지금 작업하고 있는 파일에 들어온 상태면 line num 만 적어주어도 됨.
