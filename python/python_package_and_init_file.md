@@ -33,7 +33,7 @@ from pingpong.chatbot import Chatbot
 __all__ = ['chatbot'] # 여기에 string 형태로 module 이름을 적어주면 from pingpong import * 했을때 chatbot 이 import 된다.
 ```
 
-#### 2. Nested 된 module 에 접근할 때 사용할 수 있다.
+#### 2. Nested 된 module 안에 접근할 때 사용할 수 있다.
 이 부분이 궁금해서 찾아보기 시작한 것 같은데 한참 검색한 뒤에 알게 되었다.
 
 ```
