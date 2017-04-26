@@ -27,4 +27,4 @@
 
 참고로 b 가 2 인 이유는 getrefcount 함수에 b 가 매개변수로 들어가서 매개변수까지 counting 되어서 그렇기 때문에, getrefcount 함수의 결과값에서 1을 뺀 값이 실제 refcount 로 보면 된다.
 
-  [1]: ko.wikipedia.org/wiki/ 쓰레기_수집_(컴퓨터_과학)
+  [1]:ko.wikipedia.org/wiki/쓰레기_수집_(컴퓨터_과학)
