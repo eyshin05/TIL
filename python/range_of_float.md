@@ -13,4 +13,4 @@
 >>> a
 inf
 ```
-:thinking_face:
+🤔
