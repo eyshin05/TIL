@@ -160,9 +160,17 @@ http://jekyllthemes.org/
 처음으로 루비와 관련된 일을 해보는건데 루비가 싫어지려고 하고 있다.
 다른 theme 를 고를까... orz
 
+### 더 좋은 참조 사이트를 찾았다
+https://help.github.com/articles/about-github-pages-and-jekyll/
+
+여기 보면...
+
+1. 테마 선택: https://help.github.com/articles/creating-a-github-pages-site-with-the-jekyll-theme-chooser/#using-the-jekyll-theme-chooser-with-a-new-repository
+
+
 ## 결과물
 https://eyshin05.github.io
 
 ## 참고한 사이트
 1. 이 블로그에 mac 기반으로 친절하게 설명되어 있다! https://qkraudghgh.github.io/jekyll/2016/07/02/jekyll-blog-setup.html
-
+2. https://help.github.com/articles/about-github-pages-and-jekyll/
