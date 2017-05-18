@@ -6,14 +6,14 @@
 
 먼저 전체 모듈을 다시 불러오는 게 편한 경우가 있다. 고친 코드가 하나의 메소드면 functools 같은걸 쓰면 되는데, 모듈 내에서 산발적으로 발생하게 되는 경우에는 `importlib.reload` 를 쓰게 된다.
 
-근데 `importlib.reload` 로 path 깊숙히 있는 (주로 `from path1.path2.module import class` 이런식으로 불러오게 되는) 코드를 가져올 때에는 좀 헷갈리는데, 이렇게 쓰면 된다.
+근데 `importlib.reload` 로 path 깊숙히 있는 (주로 `from path1.path2.module import Class` 이런식으로 불러오게 되는) 코드를 가져올 때에는 좀 헷갈리는데, 이렇게 쓰면 된다.
 
 ```
 import importlib
 import path1.path2.module 
 importlib.reload(path1.path2.module)
 
-instance = path1.path2.module.class(class_init_parameter)
+instance = path1.path2.module.Class(params)
 
 instance.method()
 ```
