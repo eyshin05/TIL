@@ -1,4 +1,4 @@
-#Jupyter Notebook Duct-taping
+# Jupyter Notebook Duct-taping
 
 나는 클래스나 모듈을 주로 PyCharm 으로 짜고, 테스트 할때에는 Jupyter Notebook 으로 하는데, 테스트 중 버그가 있어서 PyCharm 으로 수정하게 되면 import 문으로는 고친 코드를 불러올 수 없기 때문에 여러가지 방법을 사용하게 되었다.
 
