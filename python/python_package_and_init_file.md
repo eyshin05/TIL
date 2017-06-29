@@ -70,3 +70,5 @@ https://github.com/tensorflow/tensorflow/blob/90733a8024532f6993d11f0a89deaecb2b
 2. http://pythonstudy.xyz/python/article/18-패키지
 3. 파이썬 코딩의 기술 Better way 50 / 브렛 슬라킨 지음 / 김형철 옮김 / 길벗
 4. [Be Pythonic: __init__.py](http://mikegrouchy.com/blog/2012/05/be-pythonic-__init__py.html)
+
+덧붙여 추가로 정리한 파일 https://github.com/eyshin05/TIL/blob/master/python/python_package_and_init_file(2).md 을 링크함.
