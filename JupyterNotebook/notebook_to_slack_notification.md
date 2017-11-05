@@ -18,5 +18,8 @@ http://zeddios.tistory.com/123
 비슷한 방법으로 만약 코드의 top 상황을 3시간마다 알고 싶다면 아래의 코드를 터미널에서 사용할 수 있다.
 
 ```
-while true; do text=$(top -bn1 | head -n 20); curl -s -d "payload={\"text\":\"server top message:\n$text\"}" "webHook URL"; sleep 10800; done
+while true; do 
+  text=$(top -bn1 | head -n 20); 
+  curl -s -d "payload={\"text\":\"server top message:\n$text\"}" "webHook URL"; sleep 10800; 
+done
 ```
