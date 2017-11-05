@@ -20,6 +20,7 @@ http://zeddios.tistory.com/123
 ```
 while true; do 
   text=$(top -bn1 | head -n 20); 
-  curl -s -d "payload={\"text\":\"server top message:\n$text\"}" "webHook URL"; sleep 10800; 
+  curl -s -d "payload={\"text\":\"server top message:\n$text\"}" "webHook URL"; 
+  sleep 10800; 
 done
 ```
