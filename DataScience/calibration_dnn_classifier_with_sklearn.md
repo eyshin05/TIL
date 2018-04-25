@@ -28,8 +28,9 @@ from sklearn.utils.validation import check_X_y, check_array, check_is_fitted
 from sklearn.utils.multiclass import unique_labels
 
 class DNNMulticlassClassifier(BaseEstimator, ClassifierMixin):
-    def __init__(self, model=None):
-        self.model = model
+    def __init__(self, model=None, classes=None):
+        self.model = model
+        self.classes_ = classes
         # 다른 옵션이 있으면 변경
         
     def fit(self, X, y):
