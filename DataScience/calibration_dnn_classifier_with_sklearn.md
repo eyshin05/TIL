@@ -113,7 +113,6 @@ def print_calibration_data(bins):
     bin_pad = bin_width / 2
     
     print('bin 크기:', [len(b) for b in bins])
-    print('total 해당하는 이모지 데이터셋:', sum(sum(b) for b in bins))
     
     # 파란색은 가장 이상적인 line
     plt.bar([(j) / bin_size for j in range(bin_size)], 
