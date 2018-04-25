@@ -154,6 +154,28 @@ for i, class_name in enumerate(class_list):
 그림으로 확인하니 확실히 calibration 이 좀 된 것 같다. 다행!
 
 
+## 저장 & 불러오기
+tensorflow model 을 그대로 pickling 하지 않는 방법으로 하려면 아래처럼 저장하고 불러올 수 있다.
+
+```python
+backup1, calibration.base_estimator =calibrationsigmoid.base_estimator, None
+backup2, calibration.calibrated_classifiers_[0].base_estimator = calibration.calibrated_classifiers_[0].base_estimator, None
+
+with open('calibration.pkl', 'wb') as file:
+    pickle.dump(file=file, obj=calibration)
+```
+
+```python
+# classifier 는 따로 로딩 후 붙여준다
+with open('calibration.pkl', 'rb') as file:
+    calibration = pickle.load(file=file)
+    
+calibration.base_estimator = classifier
+calibration.calibrated_classifiers_[0].base_estimator = classifier
+```
+
+
+
 ## 참고
 
 * [테리의 딥러닝 토크 #33. On Calibration of Modern Neural Networks](https://www.facebook.com/deeplearningtalk/posts/600293953656233)
