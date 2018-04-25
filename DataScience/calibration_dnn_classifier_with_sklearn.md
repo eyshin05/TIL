@@ -113,6 +113,7 @@ def print_calibration_data(bins):
     bin_pad = bin_width / 2
     
     print('bin 크기:', [len(b) for b in bins])
+    print('total 해당 클래스 데이터:', sum(sum(b) for b in bins))
     
     # 파란색은 가장 이상적인 line
     plt.bar([(j) / bin_size for j in range(bin_size)], 
