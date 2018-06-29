@@ -14,7 +14,7 @@ with open(filename, 'rb', 0) as file, \
 ```
 
 ### 설명
-* mmap 를 이용하면 텍스트 파일을 byte 로 가져올 수 있다.
+* mmap 를 이용하면 텍스트 파일을 byte 로 접근할 수 있다.
 * 찾으려는 메시지 `'\n테스트\n'` 의 byte `.encode()` 를 mmap class instance 에서 찾아서
 * 그 위치 직전의 메시지 구분자 (여기선 개행문자) 를 찾고
 * 그 사이 byte 를 가져와서 decoding 하면 된다.
