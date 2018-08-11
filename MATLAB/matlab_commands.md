@@ -8,4 +8,8 @@
 
 ### open
 
-파일을 여는 함수. init_subject 이라는 함수가 있을 때 `open('init_subject')` 하면 파일이 열린다. 주피터 노트북에서 `init_subect??` 와 비슷한 역할.
+파일을 여는 함수. init_subject 이라는 함수가 있을 때 `open('init_subject')` 하면 파일이 열린다. 코드를 볼 수 있다는 점에서 주피터 노트북의 init_subject?? 와 비슷함.
+
+### doc
+
+함수의 document 를 여는 함수. randi 라는 함수의 문서를 보고 싶을때 `doc randi` 하면 함수를 설명하는 페이지가 열린다.
