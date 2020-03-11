@@ -26,7 +26,7 @@
 
 * Multivariate analysis - justification
   * sensitivity up (더 많은 차이점을 찾을 수 있다. across multiple voxel 에서. house vs. face 등)
-  * specificity up (multiple voxel 을 보아야 드러나는 패턴이 있다.)
+  * specificity up (inactivation 도 정보로 보는 것 등)
 * 근데 여기에 함의되어 있는 univariate 과 multivariate 의 차이점들...
   * univariate vs. multivariate
     * multivariate analysis allows optimally combining voxeld by taking into account each voxel's contribution to discriminability.
