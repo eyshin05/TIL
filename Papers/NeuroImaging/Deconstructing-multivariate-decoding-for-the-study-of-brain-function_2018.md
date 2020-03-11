@@ -53,3 +53,4 @@
       * 그에 비해 multivariate decoding 은 그런 문제를 피하면서 sensitivity 를 올려준다.
   * within-sample vs. out-of-sample
   * activation vs. information
+  * 
