@@ -52,5 +52,20 @@
       * 그치만 잘 안 쓰이는 여러가지 문제점들이 있음. 
       * 그에 비해 multivariate decoding 은 그런 문제를 피하면서 sensitivity 를 올려준다.
   * within-sample vs. out-of-sample
+    * 아, 보니까 이제야 알겠는 부분들이... 있다.
+    * univariate 은 encoding 모델이고, degree of freedom 이 덜하니까 데이터를 다 써서 estimate 할 수 있고,
+    * multivariate 은 encoding 이 목적이 아니고, dof 가 높아서 (variable 은 많은데 measurement 는 적기도 하고) generalization 목적으로 cross-validation 이 필요함.
+      * 그리고...주석 보면 decoding 모델이지만 weight of classifier 같은걸로도 encoding 을 시도할 수 있는데, 이는 information 도 아니고 activateion framework 도 아니라는 점이... (Haufe et al., 2014)
   * activation vs. information
-  * 
+    * information philosopy 는 inactivation (0) 도 정보로 취급
+    * variability 도 중요! → 좀 이따 나옴
+    * widely distributed population 이 coding 하고 있다는 아이디어
+  * What differences are necessary for increased sensitivity and specificity?
+    * 6개의 차이점이 있는데 그럼 어떻게 해석해야 하나?
+    * multivariate 의 장점에 해당하는 것
+      * multivariate: 복셀 여러개로 분석해서 sensitivity 를 올림
+      * information: specificity 를 올림
+    * 나머지 네 개는 거의 byproduct 이고, 찾아보면 우회할 방법도 있음
+    * 위 두개에 대해서
+      * discriminability 에만 초점을 맞출건지,
+      * variability of response pattern 도 다뤄져야 할지 이야기할 것임
