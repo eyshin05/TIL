@@ -4,8 +4,6 @@
 * Oct, 2018
 * NeuroImage
 
-----
-
 ## Two sources of confusion
 
 * fMRI 에서 Multivariate analysis 의 적용에 크게 두 가지 confusion 이 있음
