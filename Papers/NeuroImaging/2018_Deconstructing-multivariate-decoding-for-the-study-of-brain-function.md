@@ -4,7 +4,7 @@
 * Oct, 2018
 * NeuroImage
 
-## Two sources of confusion
+## 2. Two sources of confusion
 
 * fMRI 에서 Multivariate analysis 의 적용에 크게 두 가지 confusion 이 있음
   * real world 에 적용하기 위한 ML 과 brain 을 interprete 하기 위한 ML 은 다르다.
@@ -22,7 +22,7 @@
   * subject level 이야기인가?
 * Signal 과 noise 언급. 이후에 나오겠지만 signal = mean = univariate, noise = covariance = multivariate
 
-## Differences between classical univariate analysis and multivariate analysis
+## 3. Differences between classical univariate analysis and multivariate analysis
 
 * Multivariate analysis - justification
   * sensitivity up (더 많은 차이점을 찾을 수 있다. across multiple voxel 에서. house vs. face 등)
@@ -69,3 +69,54 @@
     * 위 두개에 대해서
       * discriminability 에만 초점을 맞출건지,
       * variability of response pattern 도 다뤄져야 할지 이야기할 것임
+
+## 4. What is signal and what is noise in multivariate decoding?
+
+* signal: 관심있는 measurement
+* noise: 관심 없는 measurement (error, not explained?)
+* activation-based philosophy
+  * neuro 에서는, 원래 noisy 해서 statistical model 로 formalize 해야 useful approximation 을 구할 수 있는 것으로 취급되어 왔음
+  * condition-independent noise
+    * variance, covariance, non-normal error
+  * condition-dependent noise
+    * variance, covariance, confound
+  * signal strength: size of the difference between mean parameters
+  * signal-to-noise ratio: ratio of difference of means : noise
+* multivariate decoding (information-based philosophy)
+  * linear classifier 의 weight vector: a **large absolute weight** reflects a stronger contribution of that voxel to the final classification.
+  * 각 voxel 의 information 에 contribution 하는 정도가 존재
+    * 그러므로, 평균에서 차이가 noise 가 아니라, 여기에서는 differences in the data distribution can be information for a classifier.
+    * covariance 자체만으로는 discrimination 이 안되지만, correlated noise 를 줄임으로써 classification 성능을 높일 수 있다는 연구 결과도 있음.
+  * signal-to-noise ratio 는 information based 에서는 accuracy 로 번역될 수 있음
+  * weight parameter 는 discriminability 를 직접 반영하지는 않지만,
+    * 절댓값은 그 voxel 이 discrimination process 에서 다른 voxel 들과 함께 얼마나 쓸모 있게 (usefulness) 쓰이는지를 직접 반영함
+
+* The collision of signal, noise, and information
+  * example 3 개를 보면서 data generation → classifier 로 classification 하면서 1) weight parameters = signal strength, 2) accuracy = signal-to-noise ratio 인지 볼 것임
+  * Example 1 (Fig 3. B. 1)
+    * Signal + 0 covariance Gaussian noise
+    * covariance 가 없고 gaussian noise 인 경우: GNB 가 best
+      * weight = how much signal there is 이므로 weight = signal strength 임
+      * accuracy 도 signal-to-ratio 를 잘 반영함
+  * Example 2 (Fig 3. B. 2)
+    * Signal + Gaussian noise with covariance
+    * 예를 들어 두 voxel 이 negative covariance 가 있어서 하나가 증가할 때 하나가 감소한다면, 의 상황.
+    * Bayse-optimal classifier 는 Fisher linear discriminant 임
+    * 이 경우 weight 는 usefulness 를 나타내긴 하지만 signal strength 는 아니지만 combination of signal and noise 이긴 함.
+    * accuracy 는 여전히 signal-to-noise ratio 를 반영함
+  * Example 3 (Fig 3. B. 3)
+    * No signal + heteroskedastic Gaussian noise
+    * 신호는 없고 노이즈밖에 없음.. covariance 도 없음.. 
+    * Linear SVC 는 이걸 구분할 수 있다;; 왜냐면 두 condition 에 따라 두 voxel 의 noise 가 다르기 때문..
+    * d-prime 이나 area under the curve 써도 마찬가지임.
+    * accuracy != signal-to-noise 이고 (왜냐면 걍 noise 빨이니까), signal 이 아니라 noise 가 정보를 가지고 있는 것임.
+    * weights != signal 이지만 important of voxel (usefulness) 는 맞음.
+    * out-of-sample 에서 테스트 했을 때 accuracy 가 높다는 건 이 경우에는 noise 도 stability 를 가진다는 것임.
+  * Example 3 는 어떻게 해석해야 하는 케이스?
+    * neural 이 맞다면.. processing strategy 를 나타낼 수 있음
+    * 한편 non-neural factor 도 noise correlation 에 영향을 줄 수 있는데 분리하기 어려울 수도 있다
+      * head motion, respiratory cycle 등
+    * 그래도 non-neural factor 가 condition 에 영향을 받는 것?
+
+## 5. Interpretation of multivariate decoding
+
