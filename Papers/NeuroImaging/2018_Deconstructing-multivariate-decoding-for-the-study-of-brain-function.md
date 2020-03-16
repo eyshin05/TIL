@@ -120,3 +120,71 @@
 
 ## 5. Interpretation of multivariate decoding
 
+* 예제 네개를 볼건데 해석의 이해를 돕기 위한 것이지 multivariate decoding 이 무효라는 의미는 아닐것임
+* low decoding accuracies
+  * accuracy 가 마치 effect size 인 것 처럼 여겨지기는 하지만, 사실은 Cohen's d 처럼 standardized measure of effect size 인 것은 아니다.
+  * averaging 을 하면 acc 가 올라가는 경향이 있고, cross-validation scheme 에 따라 달라질 수 있기 때문에 high acc 가 small effect 를 의미할 수도 있다.
+  * acc 끼리의 차이가 effect size 의 차이나 statistical power 를 의미하지도 않는다 (Ku et al., 2008)
+  * chance level 에 가까워도 population 과 다르면 information 을 제공할 수 있다 (Christophel et al., 2015)
+  * 100% 이상 올라가지 않기 때문에 effect size 와 연관짓는데 어려움이 있다.
+  * decoding acccuracy 가 effect size 를 반영한다고 하더라도, 뇌 영역에서 해당 variable 의 중요성 = accuracy 라고 해석하는 데에는 어려움이 있다. (Dubois et al., 2015)
+    * response 패턴이 어쩌면 (다른 영역에 비해) 덜 distributed 되어 있을수도 있음. 
+    * 무슨 이야긴지 논문 봐야 알겠지만.. 중요한 영역이 있긴 한데 ROI 가 너무 커서? accuracy 가 underestimate 되었다? 는 이야긴가
+  * 그러므로., accuracy 가 effect size 의 값을 반영하는 상대적인 측정치가 되기 위해서는,
+    * given study 내에서 비교할만한 condition 만 다르게 하던지, 
+    * 여러 스터디를 비교할 때에는 manipulating individual processing choices 해야함 (?)
+    * But see Bhandari et al., 2017
+  * **불행히도 decoding 결과로 standardized effect size 를 얻을 방법은 없다. **
+    * An equivalent way of correcting for the number of measurements while accounting for correlated measurements is difficult if not impossible in multivariate decoding. 
+    * 접근법을 같이 해서 비교하기
+* univariate responses in multivariate decoding results
+  * multivariate 결과랑 univariate response difference 결과랑 얼마나 차이나는지 비교할 때
+    * 다차원에 의한 차이인가? 단변량 반응 차이에서도 읽을 수 있는 confound 를 control 해야하지 않는가? (??)
+    * classicial univariate analysis 에서 읽을 수 없는 subtle fine-scale 의 response 가 있지 않겠는가?
+    * 혹은 multivariate analysis 의 superiority 를 보여주려고 수행하는 사람도 있고...
+  * 근데 사실 중요한 것은 그냥 uniform / non-uniform 의 문제 (?)
+  * one simple approach
+    * multivariate 에서는 significant results 가 있지만 univariate 에서는 null results
+  * more common approach
+    * removing univariate response differences between conditions from multivariate patterns
+      * 아마도 GLM 한 뒤에 그 error 로 multivariate analysis 했다는 것인듯
+    * 그치만 "removing univariate response difference" 가 뭘 의미하는지 명확하지 않고, 그걸 뺀 것에서 나온 multivariate response 가 무얼로 구성되어 있는지도 불명확함.
+  * "removing univariate response difference" 의 세 개의 시나리오
+    * 모든 voxel 에서 각각 condition 별로 mean activation 을 뺀 경우
+      * noise variability 만 남는다. 
+      * not realistic approach 임. 
+    * condition 별로 uniform response 를 뺀 것. across voxel 로 mean activation 을 뺀 것임.
+      * "overall activation differences" 에 가장 가까운... 많이 쓰이는 방법이기도 함.
+      * 한 복셀을 한 차원으로 봤을 때, 다차원 패턴의 중심 위치를 0에 위치시키는 것
+      * 가정: univariate response 는 각각의 복셀에서 모두 동일하다. 임.
+        * 각각 복셀간 sensitivity 가 다르다면 이 가정이 위반됨
+        * non-uniform distribution 의 정도가 영역마다 다르거나, 신경 밀도가 다르거나, 혈관의 차이, 균일하지 않은 분포 등
+      * 그러므로 이렇게 하면 incomplete removal 이다.
+    * 모든 condition 에 대하여 평균 pattern 을 뺄 경우
+      * common pattern 은 across conditions 으로 mean pattern 을 구한 다음, 각각 condition 에 이 mean pattern 을 fit 하여 구함.
+      * 가정: univariate response 으로 response pattern 이 설명 된다는 것인데,
+        * univariate response 가 아닌 추가적인 response 가 있다면 이 가정이 위반되고...
+        * (조건에 관계 없이 강하게 반응하는 voxel 들이 있다거나)
+        * (meaningful variance 를 전달하는 additional direction 일수도 있고...)
+      * univariate response 가 response pattern 을 전달하기에 충분한 경우에만 작동하는 방법이다.
+    * “removal of a univariate response” 라는 용어는 non-uniform response 로 구한 multivariate response 인 것 처럼 여기게 하는데 사실 그렇지 않다.
+      * multirvariate response 에는 uniform, non-uniform response 둘 다 있을 수 있다.
+      * 이를 시행하기 위해선
+        * removal univariate response 가 뭘 의미하는지 확실히 하고,
+        * 제거하는 동기를 확실히 하고,
+        * 그 기초 가정을 알아야 한다.
+      * 많은 경우 uniform response 는 multivariate decoding analysis 에서도 유용한 정보이니라.
+  * cross-classification 
+    * If a classifier trained on one context can generalize to data from another context, this demonstrates some degree of stability of the representation between both conditions and can be used to assess associations between cognitive processes ([Kaplan et al., 2015](http://www.sciencedirect.com.ssl.libmeta.knou.ac.kr:8010/science/article/pii/S1053811917306523#bib54))
+    * 모.. 비슷한 개념으로 확장하면 그게 cross-classification
+    * accuracy 가 decrease 하는 것에 대한 가정
+      * classifier 는 signal 에만 sensitive 하고 noise 에는 sensitive 하지 않다.
+      * 하지만.. noise 에도 정보는 있음...
+      * 그러니까 accuracy 가 decrease 하는 것이 데이터가 noisy 하기 때문인지 covariance 가 달라졌기 때문인지 알 수가 없다는 이야기군...
+      * noise 값 자체에도 의미가 있지만, classifier 는 noisy 하게 된 것에 accuracy 가 떨어지게 되고, noise 의 의미를 잡아낼 수 없게 됨
+    * 그래도 invalid 하지는 않다
+      * cross-classification 해서 accuracy 가 높다면 noise and / or (?) signal 이 stable 하다는 이야기임
+  * beta weight 의 estimability 가 다르면 spurious decoding results 를 초래할 수 있다.
+    * estimability of a beta weight 은 expected variability of its estimation across many experiments 인데,
+    * 이건 regressor 의 efficiency 에 달려 있고,
+    * 실험 디자인에 따라서 (다른 한 condition 이 시간적으로 다른 trial 에 term 을 별로 안 두고 따라와서 varia)
