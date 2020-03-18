@@ -18,3 +18,11 @@
 
 ## eLife digest
 
+* Mind wandering 이나 자기 자신에 대한 생각을 하는 것이 DMN 과 관련있다는 것으로는 잘 알려져 있었음
+  * 하지만 task 하는 동안엔 inactive 하는 것으로 생각되어져 왔었다..
+* 이 논문에서는 task swiching 할 때 DMN이 active 하게 된다는 것을 보여줌
+
+
+
+## Introduction
+
