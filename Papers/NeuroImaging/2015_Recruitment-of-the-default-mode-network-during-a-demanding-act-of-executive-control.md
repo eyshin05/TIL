@@ -152,3 +152,10 @@
       * Core, dissimilar task 는 significant 하지만 나머지는.. 특히 similar task 는 아님
 
      
+
+## Discussion
+
+* Rest 에서 sustained DMN activity 가 나타나는 것과 연관 지어서
+  * Sustained activity 가 switch-related activity 와 어떻게 연관되는가?
+  * 한 가지 가능성: Rest 상태에서 인식하고 있는 내용에 주기적으로 큰 shift 가 있다고 가정하면, sustained DMN activity 가 나타나는 것도 타당함
+  * 만약 DMN 기능의 주요 측면이 relaxing an attentional focus 라면, unfocusing 도 switching focus 도?
