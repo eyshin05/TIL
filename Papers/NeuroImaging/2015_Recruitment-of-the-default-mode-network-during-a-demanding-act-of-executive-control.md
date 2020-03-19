@@ -102,9 +102,53 @@
   * Sub-network level 에서 차이를 분석
     * 각각 sub-network 별로 ROI 에서 나온 평균 베타 값을 평균하여 two-way repeated measures ANOVA 수행
     * Main effect, interaction 둘 다 유의미하게 있음
-  * Exploratory analysis
-    * 다른 과제의, 서로 다른 3 카테고리 별로 previous trial - current trial task 로 짝지어서 univariate ROI analysis 수행 (같은 과제와 paired t-test)
-    * Perceptual 카테고리에서 lexical 카테고리로 바뀌었을 때 특히 DMPFC sub-network 가 감소했고,
-    * Lexical 카테고리에서 perceltual 카테고리로 바뀌었을 때 특히 Core sub-network 가 증가했음
-  * 
+* Exploratory analysis
+  * 다른 과제의, 서로 다른 3 카테고리 별로 previous trial - current trial task 로 짝지어서 univariate ROI analysis 수행 (같은 과제와 paired t-test)
+  * Perceptual 카테고리에서 lexical 카테고리로 바뀌었을 때 특히 DMPFC sub-network 가 감소했고,
+  * Lexical 카테고리에서 perceltual 카테고리로 바뀌었을 때 특히 Core sub-network 가 증가했음
 
+
+
+### Multivariate decoding demonstrates task representation across the DMN
+
+* Preprocessing step
+
+  * 같은데 smoothing 은 안 함
+
+* MVPA
+
+  * Target: task pair (per-lex 등 15개)
+    * 6 * 5 / 2 = 15?? 그냥 단순히 하면 6 * 6 이어야 할텐데 왜지? 다른 (similar 포함) 과제만 하는데 순서는 상관 없음?
+    * 같은 과제 제외... 하고 순서 상관 없이 15개 한 것이 맞는 듯. Univariate EDA 에서 다르게 나왔는데 왜? 30개면 못 맞춰서?
+    * 그리고 matrix 그릴 때에는... 대각선 기준으로 아래 위 같고 위쪽 삼각형에 significance 를 표시한 것이네요.
+    * 흠 나라면 앞에건 맞추고 뒤에 나오는 trial 의 task 를 맞추게 하던가 카테고리로만 했을 듯
+    * 아님... 같은 과제 / 비슷한 과제 / 다른 과제... 흠 서로 상이하니까 그건 좀 그런가
+  * Leave-one-run-out cross-validation
+
+* Accuracy 를 구해서 similar, dissimilar 를 비교함
+
+  * 서로 다른 과제 사이의 decoding 은 task feature 에 따른 많은 차이에 의해 야기될 것
+  * 한편, 유사한 과제 사이의 decoding 은 internal representation 에 의해 야기될 것
+  * Core, MTL, DMPFC 각각 네트워크 안의 ROI 를 average 해서 similar, dissimilar 비교한 것임
+  * Core, MTL, DMPFC 다 dissmilar 가 significant 했고, 약하긴 했지만 DMPFC 에서 similar pair decoding acc. 도 significant 했음.
+
+* RT 가 accuracy 의 차이를 야기한다는 연구 결과들이 있음
+
+  * Regression analysis (CA 와 RT 의 차이의 절대값), 세 개의 sub-network 별로 각각.
+
+    * Each ROI, each subject 별로 accuracy 를 구해서, subject 별로 sub-network 안의 ROI 의 accuracy 값을 평균내서, 
+    * 3 sub-network × 18 subject × 15 task pair 의 3차원 matrix 를 구해서,
+    * 서로 다른 / 유사한 task 별로 구분 한 다음,
+    * RT 와 accuracy 사이의 Spearman's correlation analysis 를 수행함
+    * 그림 보면, RT 와 상관 없이 dissimilar 가 전반적으로 더 accuracy 가 높고, similar 가 더 낮음.
+    * Correlation analysis 에서 나온 p-value 도 이와 유사한 결과.
+
+  * 각각 subject 별로 따로, 각각 ROI 안에서, similar와 dissimilar 따로, accuracy 를 모델링한 regression analysis
+
+    * 종속변수는 RT 차이값
+    * beta 값 나온 것을 각각 subject 마다 구했음
+    * sub-network 안의 ROI 끼리 평균냈음
+    * RT 가 accuracy 를 systematically 예측하지 못하는 것으로 보임
+      * Core, dissimilar task 는 significant 하지만 나머지는.. 특히 similar task 는 아님
+
+     
