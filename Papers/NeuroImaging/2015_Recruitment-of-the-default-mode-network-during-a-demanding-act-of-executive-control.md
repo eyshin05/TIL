@@ -68,3 +68,43 @@
     * Core 랑 MTL 의 activity 가 증가함을 발견했음
   * 추가로, 모든 sub-networks 가 task 하는 동안 task 와 관련된 정보를 표상한다는 증거를 보여줄 것임.
 
+
+
+## Results
+
+### Behavior results
+
+* 사람들의 performance: 잘했음
+* Reaction time: 다른 과제일때 더 길었음
+
+### Task-switch related activity in DMN
+
+* fMRI 분석 내용
+* Preprocessing steps
+  * 평범..
+
+* 다른 과제 vs. 같은 과제 GLM 수행
+  * FDR corrected p < 0.05 로 thresholding
+  * Core, MTL 네트워크와 관련된 영역들은 나왔는데, DMPFC 네트워트와 관련된 영역은 안 나왔음
+* Definition of individual DMN ROIs
+  * Use previously defined
+* DMN sub-networks 별 평균 activation
+  * ROI 안에서 switch type 에 따라 평균 베타 값을 구함
+  * 다른 과제 vs. 같은 과제 ROI 분석 결과
+    * Core, MTL 네트워크에서 유의미하게 증가하였음
+    * DMPFC 에서는 de-activation 하는 경향 (TPJ 에서는 유의미) 을 보임
+  * 비슷한 과제 vs. 같은 과제는 차이 없음
+  * Two-way repeated measures ANOVA
+    * Core, MTL, DMPFC
+    * 다른 과제 vs. 같은 과제
+    * Core 랑 MTL 은 유의미하게 증가
+    * DMPFC 는 maginal 하게 감소 (p=0.06)
+  * Sub-network level 에서 차이를 분석
+    * 각각 sub-network 별로 ROI 에서 나온 평균 베타 값을 평균하여 two-way repeated measures ANOVA 수행
+    * Main effect, interaction 둘 다 유의미하게 있음
+  * Exploratory analysis
+    * 다른 과제의, 서로 다른 3 카테고리 별로 previous trial - current trial task 로 짝지어서 univariate ROI analysis 수행 (같은 과제와 paired t-test)
+    * Perceptual 카테고리에서 lexical 카테고리로 바뀌었을 때 특히 DMPFC sub-network 가 감소했고,
+    * Lexical 카테고리에서 perceltual 카테고리로 바뀌었을 때 특히 Core sub-network 가 증가했음
+  * 
+
