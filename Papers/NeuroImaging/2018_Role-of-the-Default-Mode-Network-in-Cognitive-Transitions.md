@@ -51,7 +51,7 @@
 * Same 인지 different 인지 선택하는 task 인데, color box 가 주제를 알려줌
 
 * Rest trial 도 있음
-  * Rest + task, 
+  * Rest + task = restart, 
   * rest + rest, 
   * task + rest, 
   * tast + different (dissimilar) task, 
@@ -77,9 +77,34 @@
 * Dummy trial 도 제외됨 (모델링 후? 아님 모델링을 안함?)
 * HRF 는 delta function 으로 convolve 되었음
   * Cue 에서는 onset time 으로, execution 에서는 execution block 에서 middle(?) 으로.
-    * Execution 다시 읽어보니까 until response 까지가 execution 임
+    * Execution 다시 읽어보니까 until response 까지가 execution 임 이런 경우엔 middle 도 괜찮은 것인가
 
 * Subject 마다 각 ROI 에서 평균 contrast value 를 구한 다음에, 각각 subnetwork 별로 평균냄
 
 ### Multivariate analyses
+
+* Z-scoring beta values (across task, within each voxel)
+
+* 15 possible task pair 별로 pairwise classification 을 수행함
+  * 여기에서도 univariate 과 multivariate analysis 의 target 이 다르군요... 고민
+* Linear SVM 사용, leave one run out cross-classification
+* Accuracy - chance level (50%) 를 각각 task pair 별로, ROI 별로, subject 별로 구함
+* 그 다음 이걸 subnetwork 안의 ROI 끼리 평균냄
+
+### Finite Impulse Response Model (FIR Model)
+
+* 잘 모르겠음 나중에 봐야지
+
+
+
+## Results
+
+### Behavioral Switch Costs
+
+* 얼마나 사람들이 잘 맞췄는지: 95.9 %
+* Same task pair 가 얼마나 빨랐는지: similar 랑 비교했을 때 t=3.97, dissimilar 랑 비교했을 때 t=4.22
+  * Crittenden et al., 2015 랑은 다르게 similar vs. dissimilar 는 significant 한 차이가 없었음
+    * Design 때문인가봉가
+
+### Increased DMN Activity on Rest Trials
 
