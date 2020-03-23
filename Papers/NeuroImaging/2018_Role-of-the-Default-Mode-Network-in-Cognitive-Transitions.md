@@ -42,3 +42,44 @@
 
 ## Materials and Methods
 
+### Participants
+
+* 28 명
+
+### Task
+
+* Same 인지 different 인지 선택하는 task 인데, color box 가 주제를 알려줌
+
+* Rest trial 도 있음
+  * Rest + task, 
+  * rest + rest, 
+  * task + rest, 
+  * tast + different (dissimilar) task, 
+  * task + same domain (similar) task, 
+  * task + same task
+
+### Regions of Interest
+
+* 8mm spherical DMN ROIs
+* Frontoparietal MD ROIs 도 사용함
+  * inferior rontal sulcus,
+  * dorsal prefrontal cortex, 
+  * inferior frontal junction, 
+  * anterior insula/frontal operculum, 
+  * presupplementary motor area/dorsal anterior cingulate, 
+  * intraparietal sulcus
+
+### Univariate analyses
+
+* Task phase (cue, execution) 별로, task type (6개의 task 종류) 별로, task pair 별 regressor 를 만들어서 GLM 수행
+  * Execution 에서는 response type (same or different) 도 나누어서 구함
+* Incorrect trial 은 따로 modeling 되기는 했지만 제거됨
+* Dummy trial 도 제외됨 (모델링 후? 아님 모델링을 안함?)
+* HRF 는 delta function 으로 convolve 되었음
+  * Cue 에서는 onset time 으로, execution 에서는 execution block 에서 middle(?) 으로.
+    * Execution 다시 읽어보니까 until response 까지가 execution 임
+
+* Subject 마다 각 ROI 에서 평균 contrast value 를 구한 다음에, 각각 subnetwork 별로 평균냄
+
+### Multivariate analyses
+
