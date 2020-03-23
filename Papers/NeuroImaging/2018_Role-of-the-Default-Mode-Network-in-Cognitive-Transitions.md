@@ -102,9 +102,29 @@
 ### Behavioral Switch Costs
 
 * 얼마나 사람들이 잘 맞췄는지: 95.9 %
-* Same task pair 가 얼마나 빨랐는지: similar 랑 비교했을 때 t=3.97, dissimilar 랑 비교했을 때 t=4.22
+* Same task pair 가 얼마나 빨랐는지: dissimilar 랑 비교했을 때 t=3.97, similar 랑 비교했을 때 t=4.22
   * Crittenden et al., 2015 랑은 다르게 similar vs. dissimilar 는 significant 한 차이가 없었음
     * Design 때문인가봉가
 
 ### Increased DMN Activity on Rest Trials
+
+* Cognitive switching 분석을 위해 cue 에만 초점을 두고 execution 은 제외함
+* Task-negative characteristic of DMN (Univariate analyses)
+  * Task 는 task stay, similar, dissimilar task 다 평균 낸 것
+  * Rest switch > task 는 rest switch 랑 task 비교한 것
+    * Core, MTL, dmPFC significantly increased, MD (less) significantly decreased
+  * Rest stay > task
+    * Core, MTL significantly increased
+  * Additional t-test (rest stay vs. rest switch)
+    * Core, MTL significantly different (rest stay 가 높음)
+  * 2-way repeated measures ANOVA
+    * rest switch > task stay, rest stay > task stay 로
+      * task 는 같은데..?
+    * subnetwork 의 main effect 랑 interaction effect 는 significant
+  * 그리고 multiple comparison correction 했단 얘기는 없네용? 
+
+### Increased DMN Activity for Large Task Switches
+
+* To replicate Crittenden et al., 2015...
+  * 
 
