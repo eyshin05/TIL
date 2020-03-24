@@ -173,3 +173,30 @@
 
 ### Individual voxels in DMN and MD regions show sensitivity to both rest and between-domain task switches
 
+* 어떤 복셀이 dissimilar 만큼 rest 에 sensitive 한지 알아보려고 함
+* ROI 안에서, Rest > task, dissimilar > same task 둘 다 uncorrected p < 0.05 수준으로 significant 한 영역을 찾음
+* Core 는 18.3 %, MTL 은 26.9 %, dmPFC 는 11.7 %, MD 는 10.8 %
+
+### DMN and MD activity patterns distinguish task domains
+
+* 드디어 multivariate pattern analysis 에 도달하였다.... orz
+  * 이 논문에서도 크게 중요한 부분은 아닌가 싶고
+* Cue period activity 로, task type 을 classification 수행함.
+* linear SVC
+* 아, 이제야 이해가 갔는데...
+  * Task type 은 trial type (총 6개) 이고, 
+  * 6 * 5 / 2 해서 pair 가 15 개라고 했는데 이게 class type 을 두 개씩 엮어서 train / test 를 각각 수행해서 accuracy 를 구했다는 뜻이었군;
+  * 그래서 chance level 도 50%...
+  * Decoding accuracy 는 비교가 목적이니까 말은 되나... 평균 낼 거리도 많으니까 좀 더 stable 할 테고...
+    * (하지만 누군가 나에게 이렇게 하라고 하면 싫어했을 것 같음;)
+* ROI 별로 구한 후 Subnetwork 안에서 평균 냄
+* Decoding accuracy 자체가 높진 않지만 significant 했음
+* Target 두 개가 within-domain 인지 between-domain 인지 나눠서 averaging
+* 결과
+  * Between domain 인 경우 모든 network 에서 significant 했음
+  * Within domain 인 경우 MD 만 significant 했음
+  * Between vs. Within mean accuracy 비교했더니 core 랑 MTL 은 between 이 significantly high
+  * 2-way repeated ANOVA (subnetwork, task pair domain) 해 봄
+    * 데이터는 subnetwork 별로 평균내서 구했음
+    * Subnetwork, domain 다 main effect 있었고 interaction 도 있었음.
+
