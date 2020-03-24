@@ -200,3 +200,13 @@
     * 데이터는 subnetwork 별로 평균내서 구했음
     * Subnetwork, domain 다 main effect 있었고 interaction 도 있었음.
 
+## Discussion
+
+* Our finding
+  * Crittenden et al., 2015 결과가 replicate 되었음
+  * Rest 와 비교했을 때 새로운 결과도 찾았음
+* Crittenden et al., 2015 에서는 이렇게 증가한 DMN activity 가 relaxation of the previous task set 인지, establishment of the next 인지 알 수 없었는데 우리는 rest 를 도입해서 연구했다
+  * Previous cognitive focus 가 relaxing 될 때에도 (task-rest pair), 새로운 것이 제시됐을 때에도 (rest-task pair) activity 는 강했다
+* 이걸 볼 때
+  * DMN function 을 internal 이나 self-directed cognition 으로 생각하면 설명하기 힘들고,
+  * 
