@@ -207,6 +207,37 @@
   * Rest 와 비교했을 때 새로운 결과도 찾았음
 * Crittenden et al., 2015 에서는 이렇게 증가한 DMN activity 가 relaxation of the previous task set 인지, establishment of the next 인지 알 수 없었는데 우리는 rest 를 도입해서 연구했다
   * Previous cognitive focus 가 relaxing 될 때에도 (task-rest pair), 새로운 것이 제시됐을 때에도 (rest-task pair) activity 는 강했다
-* 이걸 볼 때
-  * DMN function 을 internal 이나 self-directed cognition 으로 생각하면 설명하기 힘들고,
-  * 
+* DMN function
+  * 이 연구 결과를 볼 때 DMN function 을 internal 이나 self-directed cognition 으로 생각하면 설명하기 힘들고, (내부 환경)
+  * Switch related activity 로는 설명할 수 있음 (외부 환경적 요소)
+  * 짧은 rest 에서 mind-wandering 등이 나타난다는건 이상함
+  * Task 시작할 때에도 activity 가 높은 것도 이상함 (DMN 이 rest related activity 라면)
+* Many results in the literature (of the DMN)
+  * Broad features of a current scene, episode or context, including spatial surroundings (Hassabis and Maguire 2007, 2009; Howard et al. 2014), 
+  * time (Addis et al. 2007; Andrews-Hanna et al. 2010), 
+  * social aspects of self and others (Frith and Frith 2003; D’Argembeau et al. 2005), etc
+  * “Situation model” by Ranganath and Ritchey (2012)
+  * 이건 context encoding 에 대한 얘기고, 또한 implementation and control of current cognition 에 대한 것이기도 함
+  * 어떤 role 을 수행하기에  Context representation 을 가능하게 하는 걸까
+    * 현 context 에서 어떤 옵션이 가능한지에 대한 참조
+    * 지금 하는 행동의 구성 요소를 묶어서 대안으로 가능한 행동보다 이게 더 나음을 제시 (의역 파티)
+* 우리의 제안
+  * 인지가 unfold 될수록 (전개될수록?) context representation 의 상대적인 중요성이 왁스칠되고 줄어들어서, 그래서 DMN 이 활동하는 것이 아닐가
+  * Context representation 은 rest 할때는 강하고 (? strong at rest),
+    * 어쩌면 약간은 cognitive resource 로 경쟁하고 있을수도 있음
+  * 이렇게 표현된 컨텍스트가 때로는... 내부적으로 향한 생각같은 걸수도 있지만, 
+    * 단순히 자기 주변 환경의의 representation 이  강화되었기 때문일 수도 있음
+  * 아니면 보완적으로, 집중하고 있는 작업의 operation 이 점차로 embedding 되어서,
+    * Context representation 이 점차 줄어들고,
+    * 선택적인 주의에 의해 억압되어 별로 상관 없는 것이 되었기 때문일수도
+    * Context representation 이 약화 → losing ourselves → task-negative 와 task-positive 의 anti correlation(Fox, Snyder, et al. 2005; Kelly et al. 2008)
+  * 근데 새 작업이 주어지면 이 context representation 이 다시 약화되어서 다시 DMN activity 증가하고 “becoming aware of our surroundings” 하게 된 것이 아닐까
+* 여기에 일치하는 여러 논문들
+  * MTL 은 perceptual processing hierarchy 랑 memory 기능
+    * HF 등... 장면에 대한 기억 뿐만 아니라 perceptual processing of scenes
+    * MVPA 와 memory
+      * DMN 으로 MVPA 해봤더니 TV 프로그램 에피소드를 다시보거나 기억할 때 acc 가 높았(겠지)
+      * 청각 서술로 기억하는 연구도 MVPA results 가 있었고,
+      * Nonspatial task contexts 연구도 있었고...
+  * grid cell 도 있고...
+
