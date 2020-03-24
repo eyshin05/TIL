@@ -126,5 +126,50 @@
 ### Increased DMN Activity for Large Task Switches
 
 * To replicate Crittenden et al., 2015...
-  * 
+  * 의 univariate analysis 결과
+  * Dissimilar task 에서 core 와 MTL subnetwork 의 activity 가 증가했음 (repliate 되었음)
+    * dissimilar > similar task
+    * dissimilar > same task
+  * dmPFC subnetwork 는 similar > dissimilar task (replicate 되었음)
+
+### Large Increases in DMN Activity for Task Restarts
+
+* 그 이상으로 restart 와 rest (rest-rest 와 task-rest 의 평균) 의 activity 가 컸다...
+* Restart vs. task stay
+  * Core 와 MTL 에서는. dmPFC 에서는 아니었음.
+* Restart 와 task stay trial 들에서, cue 와 execution 을 더한 average beta 값을 이용해 restart vs. task stay 분석
+  * Core, MTL: restart > task
+    * Rest > task stay in Core
+    * MTL 은 아니었음
+  * dmPFC: rest > task stay , 하지만 restart 는 아니었음
+
+### Component ROIs within each subnetwork
+
+* Individual ROIs in each DMN subnetwork 로 ROI 분석도 해 봄
+  * Supplimentary figures
+
+### MD activity across trial types
+
+* Greater MD activity for restart
+* Greater MD activity in similar > same task
+* 2-way repeated ANOVA 
+  * Dissimilar, similar, same
+  * Core, MD
+    * no main effect, but a significant interaction
+  * MTL, MD
+    * no main effect, but a significant interaction 
+
+### Increased activity at task restart is distinct from prolonged rest activity
+
+* Restart 란 sustained neural activity 나 prolonged hemodynamic response 는 아닌가?
+  * Task 앞의 rest 에서 이어져 오는 activity 의 연장...
+* 모든 subject 에서 3.88 개의 4 개의 rest 가 이어지는 row 가 있었는데 이를 뽑아냄
+* FIR model 로 activity 를 estimate 해봄
+* 결과
+  * Long rest 다음에 restart 하는 경우에는 통상 rest trial 의 activity 보다 더 높은 DMN activity 가 있었음
+  * DMN subnetwork 와 restart, rest 사이에 2 way ANOVA 해보니 marginal main effect 와 significant interaction 이 있었음
+  * Restart effect 는 MTL 에서 가장 컸음
+  * MD network 에서도 restart 할 때 activity 가 significantly 증가했음
+
+### Individual voxels in DMN and MD regions show sensitivity to both rest and between-domain task switches
 
