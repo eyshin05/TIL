@@ -140,3 +140,4 @@ https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/7333/7001725/68494
 
 ## Conclusion
 
+* Our study, in agreement with several other publications, highlighted the positive contribution of the motor imagery learning to the enhancement of motor performance, and revealed a connection between the alteration of the DMN and the motor performance.
