@@ -91,3 +91,15 @@
 
 ## Results
 
+* Behaviore change 를 봤더니 control 은 차이 없었는데 실험한 그룹은 차이가 있었다
+* Total connectivity degree 는 lMTL, rLPC 에서 significantly 증가했다
+* Connectivity degree 의 alteration (노드와 노드 간) 는 
+  * lMTL 에서는 rLTC, rLPC, dMPRC 가 significantly 증가
+  * rLPC 에서는 LMTL, rLTC, dMPFC 에서 significantly 증가
+* Alteration 과 performance improvement 와의 correlation
+  * 실험한 그룹에서 rLPC (r=−0.555,p=0.039) 나머지는 significant 하지 않았음
+
+
+
+## Discussion
+
