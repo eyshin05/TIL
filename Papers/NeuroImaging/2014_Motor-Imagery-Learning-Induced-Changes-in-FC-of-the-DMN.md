@@ -94,12 +94,49 @@
 * Behaviore change 를 봤더니 control 은 차이 없었는데 실험한 그룹은 차이가 있었다
 * Total connectivity degree 는 lMTL, rLPC 에서 significantly 증가했다
 * Connectivity degree 의 alteration (노드와 노드 간) 는 
-  * lMTL 에서는 rLTC, rLPC, dMPRC 가 significantly 증가
+  * lMTL 에서는 rLTC, rLPC, dMPFC 가 significantly 증가
   * rLPC 에서는 LMTL, rLTC, dMPFC 에서 significantly 증가
 * Alteration 과 performance improvement 와의 correlation
   * 실험한 그룹에서 rLPC (r=−0.555,p=0.039) 나머지는 significant 하지 않았음
 
-
+* 나온 애들 정리
+  * Core network
+    * 없음
+  * dmPFC network
+    * LTC, DMPFC
+  * MTL network
+    * MTL, LPC 가 여기? (pIPL??)
 
 ## Discussion
+
+https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/7333/7001725/6849455/6849455-fig-5-source-large.gif
+
+그림 귀엽다
+
+* Motor learning 과 DMN FC 와의 관계
+  * The performance of the motor execution task was significantly improved by the motor imagery training and the alteration of the behavioral performance was correlated with the increment in activity of the lateral parietal region.
+  * Motor imagery training increased the functional connectivity between the lateral parietal, medial temporal and lateral temporal regions within the DMN.
+
+* ICA 분석 결과
+  * Comparison between pre- and post-learning revealed that the motor learning did not induce any significant alteration of the activity in the brain regions of the DMN for either the experimental or control group.
+* DMN 의 role
+  * The DMN was generally characterized by episodic memory recollection, manipulation of conceptual knowledge, creativity, problem solving, prospection, and planning.
+  * & supra-modal imagery network
+  * It could be altered through cognitive training tasks
+  * A series of cognitive processes can participate in motor imagery training, including retrieving the pre-learned sequence with its contextual scenarios from memory, generating and enhancing the conceptual knowledge about the numerical sequence, translating the movement patterns into spatial coordinates, etc..
+  * Due to the putative role of the MTL, LPC, and LTC in memory, spatial cognition, and conceptual knowledge processing, respectively, these brain regions have been reported to be engaged in the motor imagery task.
+  * MTL might work with the LPC to participate in the encoding and retrieval of the spatial information.
+
+* ICA & graph 로 분석한 DMN
+  * Motor imagery learning could not lead to differential contributions of particular regions to the DMN, but could lead to changes of their interactions.
+* Behavioral correlation
+  * This result is consistent with the previous study that found the changes of the DMN engagement were negatively correlated with performance increases after training.
+    * D. D. Jolles, M. A. van Buchem, E. A. Crone, S. A. Rombouts, "Functional brain connectivity at rest changes after working memory training", *Hum. Brain Mapp.*, vol. 34, no. 2, pp. 396-406, Feb. 2013.
+  * LPC 는 spatial processing 과 연관되어 있을 가능성
+    * Based on the neural efficiency hypothesis that **faster-performing individuals show less neural activity than slower performers**, we inferred that training may result in smaller increases in the activity in LPC for participants who have greater ability in integrating spatial information with conceptual knowledge of the numerical sequence and the digit actions.
+* There are several limitations in this preliminary study.
+
+
+
+## Conclusion
 
