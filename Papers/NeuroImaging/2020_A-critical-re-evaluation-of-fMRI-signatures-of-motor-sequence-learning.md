@@ -46,3 +46,9 @@
 
 ## Results
 
+### Speed of sequence execution increases with learning
+
+### Overall activation does not change in M1
+
+### Learning-related activation changes in premotor and parietal areas
+
