@@ -57,9 +57,29 @@
 
 ### Multiple motor and premotor regions show requence-specific activation patterns
 
-* LDA classifier 는 Duda et al., 2001 를 레퍼하네
-* 결과
+* LDA classifier 는 Duda et al., 2001 를 레퍼하네 근데 뭔가 되게 이상한 방법
+* Surface-based searchlight analysis 결과
   * highly significant: right M1, bilateral PMd, IPS
   * also significant: PMv, SMA, pre-SMA
-* 
+* 결과 해석
+  * Finger movement 를 different timescale 로 encoding 한 것일까? Unlikely.
+    * first, the spatial distribution of classification accuracy for sequences differs substantially from that for single finger movements ([Diedrichsen et al., 2012](https://elifesciences.org/articles/00801#bib8)), especially in the ipsilateral, left hemisphere.
+      * Single finger movement 를 decoding 하면 central sulcus 쪽이 나오는데, sequence 는 premotor 랑 parietal 이 나왔음
+    *  Secondly, to test the idea of different temporal activation profiles directly, we defined six bilateral regions of interest.
+      * Temporal response 의 main component 를 뽑아서 보니까, first componenet 는 canonical activation profile 이었고, 나머지는 temporal variation 을 설명하고 있었다.
+      * 여기서 first temporal component 로 classification 해보니 accuracy 가 가장 높았다.
+        * 다른 temporal component 넣어주면 acc 감소 → 정보 없음 (?) 의 가능성
+  * Instruction / execution related activity 중 어느 것일까?
+    * Temporal analysis
+      * S1 은 2번째 TR (2.7-5.4s) 로 classification 했을 때 above chance 였지만,
+      * 다른 영역들은 3번째 TR 이후부터 above chance
+      * 아마 SMA 는 부분적으로 instruction related activity 일지도?
+    * OPJ 나 PMd 같은 영역들 (visual..?) 에서도 accuracy 가 높았다
+      * 글자가 안 보이는 시기에도 높았음
+  * 1, 2, 3 dimension 으로 압축해서 classification 했을 때 만약 single component 로만 패턴이 영향을 받는다면 1 dimension 에서도 accuracy 가 높을텐데 모든 ROI 가 3-dimension 이어야 accuracy 가 올라갔음
+    * we can conclude that sequences are encoded in unique spatial activation patterns, rather than in differently scaled versions of a single pattern.
+
+### Sequence-specific activation patterns become more distinct with learning
+
+
 
