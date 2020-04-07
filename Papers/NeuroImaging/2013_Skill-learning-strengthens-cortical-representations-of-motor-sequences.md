@@ -15,6 +15,8 @@
 * Multivariate pattern analysis 했더니 untrained, trained 둘 다 distinguish 되었지만 (M1/S1), SMA 등을 보면 trained 가 좀 더 잘 classified 되었다.
 * Skill learning → specialized neuronal circuits 를 발달시킴 → 빠르고 정확한 movement (without brain activity increase)
 
+
+
 ## Introduction
 
 * Hypothetical learning-related chances in activity patterns associated with two sequences of five finger-presses.
@@ -25,4 +27,39 @@
     * The development of more distinct cortical activation patterns associated with each individual sequence
 
 
+
+## Results
+
+### Behavioral correlateds of skill learning
+
+* Experimental design
+  * As fast as possible
+* Generalization
+  * Untrained  sequence &  untrained hand
+  * Pre-test vs. post-test 비교해보니 significantly drop 했음
+
+### Average activation is reduced for trained relative to untrained sequences
+
+* Univariate analysis
+  * sequence-related activation increase 영역을 잡기 위해 rest 랑 비교해서 significant 한 영역을 찾음
+    * left S1 이랑 M1, dorsal & ventral premotor, SMA, IPS, occipital-parietal junction 에서 나옴
+      * right 에서도 나왔는데 Verstynen et al., 2005 레퍼했음
+    * 그림에서 overlap 영역 그린게 흥미롭군.. 어떻게 binary 가 아니게 그렸지
+      * thresholding 해서 그린거고 group mean 데이터를 그린건 알겠는데... alpha 값으로 두고 그렸나?
+      * 어쨌든 t-value 표시해줬으니 별로 중요하진 않은듯
+  * Trained vs. untrained
+    * Our task instructions regarding speed were designed such that the error rate for the two sequence types during scanning was exactly matched (see methods)
+      * We instructed participants to decrease their MT if they had an error-rate of less than 20% and to focus on accuracy if the error rate was larger than 20%. This speed-accuracy instruction served to keep error-rates stable across the experiment.
+      * To correct for possible pre-test differences between sequences, we calculated a regression between the pre-test difference (x-variable) and the post-test differences (y-variable) and tested whether the intercept was significantly different from zero.
+      * dorsal premotor 랑 IPS 에서만 lower activity 가 발견됨
+        * trained sequence 에서 덜 관여하거나, trained sequence 가 더 efficiently encode 되어 있기 때문?
+        * left 가 더 decreased 되었음
+
+### Multiple motor and premotor regions show requence-specific activation patterns
+
+* LDA classifier 는 Duda et al., 2001 를 레퍼하네
+* 결과
+  * highly significant: right M1, bilateral PMd, IPS
+  * also significant: PMv, SMA, pre-SMA
+* 
 
