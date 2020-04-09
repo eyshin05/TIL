@@ -81,5 +81,19 @@
 
 ### Sequence-specific activation patterns become more distinct with learning
 
+* MVPA 결과 learning-dependent change 가 있었던 영역: SMA, pre-SMA
 
+* Dimensionality analysis 로 sequence-specific pattern 이 separate 한지, overlap 되는지 살펴봄
+  * Untrained sequence 가 unique 하지만 basically random activity pattern 이었음
+  * This means that any two activation patterns exhibit some non-overlapping features, but also share a specific amount of shared activity.
+* Could these accuracy differences be an artifact of performance differences during the scan?
+  * While trained and untrained sequences were executed at slightly different speeds and average forces ([Table 1](https://elifesciences.org/articles/00801#tbl1)), the individual differences in overall classification accuracy did not correlate with the difference in MT (p=0.75), force (p=0.51), or error rate (p=0.21). 
+  * We tested how well a linear classifier could discriminate between each set of four sequences based on MT, average force, or error rate, either considered in isolation or in any combination as separate features. 
+    *  None of the seven combinations showed a significant difference between trained and untrained sequences (all *t*(15) < 1.15, p>0.269; see [Table 1](https://elifesciences.org/articles/00801#tbl1)).
+  * Furthermore, when including the differences in classification accuracy based on all behavioral variables as a covariate, the accuracy difference based on fMRI patterns remained significant, *t*(15) = 2.56, p=0.01.
+  * Thus, the higher classification accuracy for trained sequences was not a simply a consequence of more stable behavioral performance.
+
+
+
+## Discussion
 
