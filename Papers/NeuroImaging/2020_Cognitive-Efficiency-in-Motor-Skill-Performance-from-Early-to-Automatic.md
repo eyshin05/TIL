@@ -14,7 +14,7 @@
 
 
 
-## Introduction
+## 1. Introduction
 
 * Two general characteristics of motor skill acquisition
   * Performance improves.
@@ -47,4 +47,31 @@
   * Helie et al., 2010 의 2번째 실험
 
 ### 1.4 Cognitive framework for skill automatization
+
+![Figure 1](https://media.springernature.com/lw785/springer-static/image/chp%3A10.1007%2F978-3-030-34784-0_12/MediaObjects/449236_1_En_12_Fig1_HTML.png)
+
+* C-SMB; cognitive framework for sequential motor behavior; Verwey et al., 2015.
+  * A motor skill can be represented perceptually, symbolically, and motorically 
+  * and these representations are processed, respectively, by perceptual, central, and motor processors. 
+  * Central-symbolic representations
+    * Motor sequence learning 은 spatial, 또는 (even) verbal sequence form 에 기반하고 있다
+    * 하지만 상대적으로 느리고 인지 능력을 요구하는 과정
+  * Chunking
+    * Extensive practice 로 얻을 수 있음
+    * Integrated movement 로 다루면서 이를 시작하는 데에 cognitive resource 가 줄어들게 됨
+    * Flexibility 가 줄어들고 interference 에 약해지는 원인일 수 있음
+
+### 1.5 Historical and contemporary views on neural changes associated with skill automaticity
+
+* Hierarchical movement control
+  * Novel motor skill 은 prefrontal cortex 같은 (resource demanding 하고 least efficient executive cortical level 인) 곳에서의 control 이 필요...
+  * 연습하면 premotor 나 1차 운동 영역 같은 더 효율적인 영역으로 control 이 transfer 하며
+  * 혹은 subcortical region 인 basal ganglia 로 control 이 transfer 할 것이다
+* Automaticity 와 efficiency 의 특징은 practice-dependent neuroplastic change 에서 파생된 것
+  * Neural involvement 의 감소가 필요한 모델은 아님
+  * 그보다는 neural connection 이 발달하여 speed 와 accuracy 퍼포먼스가 (in parallel) 올라간 것이고, 그래서 cognitive demand 가 줄어든 것
+
+## 2. Neural changes from early skill learning to automatization
+
+
 
