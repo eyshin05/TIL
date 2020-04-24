@@ -20,5 +20,10 @@
 
 ## Introduction
 
-
+* PFC lesion studies
+  * Participants struggle to coherently organize their behavior around a goal 
+  * & show reduced plexibility in changing circumstances.
+* Theories of PFC function
+  * It may represent task-relevant variables (such as rules, goals, rewards, action choices, ...)
+  * The task representations - the cognitive control of top-down framework ("top")
 
