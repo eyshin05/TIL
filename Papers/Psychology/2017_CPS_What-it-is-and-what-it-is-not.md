@@ -35,5 +35,16 @@
   * 이런 것들이 complex problem
   * 이런걸 푸는 심리학적 과정을 포괄하여 complex problem solving (CPS)
 * 1970년대부터 CPS 의 연구: 컴퓨터 시뮬레이션 기반 microworld 에서 피험자들의 행동에 대한 관찰
-  * 
+  * PISA (Programme for international student assessment) 같은 large-scale assessments 에도 영향을 미침
+  * 수많은 이론적 / 측정에 관한 / 응용 / differential effect / developmental effects / 신경과학 / 문화적 차이에 관한 / 메타 분석 / 책이나 북 챕터까지... 나와있음
+* 이 논문의 목표
+  * 정당성의 측면을 명확히 하는 것
+    * CPS는 무엇을 의미해야 하며, 무엇을 의미하면 안되는가?
+  * 역사적인 리뷰 → 여러 중요한 지점들을 체계화 할 것임
+
+
+
+## Historical Review
+
+
 
