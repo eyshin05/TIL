@@ -3,6 +3,7 @@
 * [Dietrich Dörner](https://www.ncbi.nlm.nih.gov/pubmed/?term=D%26%23x000f6%3Brner D[Author]&cauthor=true&cauthor_uid=28744242) and [Joachim Funke](https://www.ncbi.nlm.nih.gov/pubmed/?term=Funke J[Author]&cauthor=true&cauthor_uid=28744242)
 * Jul 2017
 * Front Psychol.
+* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5504467/
 
 ---
 
@@ -46,5 +47,11 @@
 
 ## Historical Review
 
-
+* 1962 에 "Dynamic decision making" 이라는 용어가 있었음
+* 보통 CPS 의 측정은 여러개의 상호 연관된 변수가 있는 dynamic system 하에서 진행된다
+  * Early work: "Lohhausen" 시뮬레이션 시나리오 - 변수가 2000개
+    * 작은 마을의 시장이 되어 10년간 운영하는 것
+    * 실시간으로 10시간 걸림
+    * 분석할 때에는 linear equation 이나 finite state automata 를 이용한 다이나믹 시스템 사용함
+    * 
 
