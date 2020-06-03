@@ -1,6 +1,6 @@
 # Complex Problem Solving: What It Is and What It Is Not
 
-* [Dietrich Dörner](https://www.ncbi.nlm.nih.gov/pubmed/?term=D%26%23x000f6%3Brner D[Author]&cauthor=true&cauthor_uid=28744242) and [Joachim Funke](https://www.ncbi.nlm.nih.gov/pubmed/?term=Funke J[Author]&cauthor=true&cauthor_uid=28744242)
+* Dietrich Dörner and Joachim Funke
 * Jul 2017
 * Front Psychol.
 * https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5504467/
