@@ -23,7 +23,6 @@
   * "Special problem solver": 특정 닫힌계에서의 문제를 푸는 것
   * 하지만 실생활은 well-defined solution 이 없고 open boundary 임
   * "Well-defined problem" 과 "ill-defined problem" 을 푸는 것은 다른 인지적 방식을 거치게 됨
-
 * Well-defined problem 이란?
   * 정확하게 설명된 목표, 그에 도달하기 위한 분명한 수단
   * 예시
@@ -43,8 +42,6 @@
     * CPS는 무엇을 의미해야 하며, 무엇을 의미하면 안되는가?
   * 역사적인 리뷰 → 여러 중요한 지점들을 체계화 할 것임
 
-
-
 ## Historical Review
 
 * 1962 에 "Dynamic decision making" 이라는 용어가 있었음
@@ -53,5 +50,4 @@
     * 작은 마을의 시장이 되어 10년간 운영하는 것
     * 실시간으로 10시간 걸림
     * 분석할 때에는 linear equation 이나 finite state automata 를 이용한 다이나믹 시스템 사용함
-    * 
 
